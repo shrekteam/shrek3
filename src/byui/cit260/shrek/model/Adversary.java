@@ -17,6 +17,15 @@ public class Adversary implements Serializable {
     public Adversary() {
     }
     private String name;
+    private int strength;
+
+    public int getStrength() {
+        return strength;
+    }
+
+    public void setStrength(int strength) {
+        this.strength = strength;
+    }
 
     public String getName() {
         return name;
@@ -27,9 +36,15 @@ public class Adversary implements Serializable {
     }
 
     @Override
+    public String toString() {
+        return "Adversary{" + "name=" + name + ", strength=" + strength + '}';
+    }
+
+    @Override
     public int hashCode() {
         int hash = 5;
-        hash = 41 * hash + Objects.hashCode(this.name);
+        hash = 37 * hash + Objects.hashCode(this.name);
+        hash = 37 * hash + Objects.hashCode(this.strength);
         return hash;
     }
 
@@ -45,12 +60,10 @@ public class Adversary implements Serializable {
         if (!Objects.equals(this.name, other.name)) {
             return false;
         }
+        if (!Objects.equals(this.strength, other.strength)) {
+            return false;
+        }
         return true;
     }
 
-    @Override
-    public String toString() {
-        return "Adversary{" + "name=" + name + '}';
-    }
-    
 }

@@ -22,25 +22,44 @@ public class Shrek {
     /**
      * @param args the command line arguments
      */
-    public static void main(String[] args) {
-        // TODO code application logic here
+    
+    private static void BrunoTestPlayer(){
         Player playerOne = new Player();
         playerOne.setName("Shrek2");
         playerOne.setBestTime(7.00);
         String playerInfo = playerOne.toString();
         System.out.println(playerInfo);
+    } 
+    private static void BrunoTestWeapon(){
         Weapon weaponOne = new Weapon();
         weaponOne.setName("excalibur");
+        weaponOne.setDimension(12.1);
         String weaponInfo = weaponOne.toString();
         System.out.println(weaponInfo);   
+    }
+    private static void BrunoTestTarget(){
         Target targetOne = new Target();
         targetOne.setName("Fiona");
+        targetOne.setHorizontalPosition(10.0);
+        targetOne.setVerticalPosition(11.0);
         String targetInfo = targetOne.toString();
         System.out.println(targetInfo); 
+    }
+    private static void BrunoTestAdversary(){
         Adversary adversaryOne = new Adversary();
         adversaryOne.setName("Soldier");
+        adversaryOne.setStrength(3);
         String adversaryInfo = adversaryOne.toString();
         System.out.println(adversaryInfo); 
+        
+    }
+            
+    public static void main(String[] args) {
+        // TODO code application logic here
+        BrunoTestPlayer();
+        BrunoTestWeapon();
+        BrunoTestTarget();
+        BrunoTestAdversary();       
         
     }
     
