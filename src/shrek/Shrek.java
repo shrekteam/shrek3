@@ -48,7 +48,7 @@ public class Shrek {
     private static void BrunoTestAdversary(){
         Adversary adversaryOne = new Adversary();
         adversaryOne.setName("Soldier");
-        adversaryOne.setStrength(3);
+        adversaryOne.setStrength(4);
         String adversaryInfo = adversaryOne.toString();
         System.out.println(adversaryInfo); 
         
