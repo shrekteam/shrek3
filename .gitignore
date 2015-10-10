@@ -1,3 +1,4 @@
+
 #Compiled source #
 ###################
 *.com
@@ -38,4 +39,4 @@ source
 .Trashes
 ehthumbs.db
 Thumbs.db
-/nbproject/private/
+>>>>>>> origin/master
