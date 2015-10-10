@@ -9,6 +9,7 @@
 package shrek;
 
 import byui.cit260.shrek.model.Adversary;
+import byui.cit260.shrek.model.Pathway;
 import byui.cit260.shrek.model.Player;
 import byui.cit260.shrek.model.Target;
 import byui.cit260.shrek.model.Weapon;
@@ -53,13 +54,21 @@ public class Shrek {
         System.out.println(adversaryInfo); 
         
     }
-            
+    private static void BrunoTestPathway(){
+        Pathway pathwayOne = new Pathway();
+        pathwayOne.setName("Bridge1");
+        pathwayOne.setDimension(100.0);
+        String pathwayInfo = pathwayOne.toString();
+        System.out.println(pathwayInfo); 
+        
+    }        
     public static void main(String[] args) {
         // TODO code application logic here
         BrunoTestPlayer();
         BrunoTestWeapon();
         BrunoTestTarget();
-        BrunoTestAdversary();       
+        BrunoTestAdversary(); 
+        BrunoTestPathway();
         
     }
     
