@@ -56,7 +56,7 @@ public class Shrek {
     }
     private static void BrunoTestPathway(){
         Pathway pathwayOne = new Pathway();
-        pathwayOne.setName("Bridge1");
+        pathwayOne.setName("Bridge3");
         pathwayOne.setDimension(100.0);
         String pathwayInfo = pathwayOne.toString();
         System.out.println(pathwayInfo); 
